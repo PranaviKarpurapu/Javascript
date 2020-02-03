@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        p{
+            padding : 10px;
+            background-color : lavender; 
+
+        }
+    </style>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            //fading out displayed paragraphs, time can be specified in ms
+            
+            $(".out-btn").click(function () {
+                $("p").fadeOut(3000);
+            });
+
+            //fading in hidden paragraphs, time can be specified in ms
+            
+            $(".in-btn").click(function () {
+                $("p").fadeIn(3000);
+            });
+
+      });
+    </script>
+</head>
+<body>
+    <p>I am Paragraph 1</p>
+    <p>I am Paragraph 2</p>
+    <button type="button" class="out-btn">Fade Out Paragraphs</button>
+    <button type="button" class="in-btn">Fade In Paragraphs</button>
+</body>
+</html>
